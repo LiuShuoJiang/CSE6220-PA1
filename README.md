@@ -1,4 +1,4 @@
-# CSE 6220 PA1
+# Georgia Tech CSE 6220 Lab 1
 
 ## Overview
 
@@ -24,9 +24,11 @@ Windows Subsystem for Linux (WSL) running Ubuntu 22.04
 
 1. Compile the program using MPICH's `mpicxx` compiler wrapper:
 
-``` 
-mpicxx -o pi_calc mpi_pi_estimation.cpp -std=c++11
 ```
+mpicxx -o pi_calc main.cpp -std=c++11
+```
+
+Alternatively, you may use the `make` command to build the program with provided `Makefile`.
 
 2. Run the program with a specific number of processors (`p`) and points (`n`):
 
