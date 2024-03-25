@@ -8,10 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCE_FILES main.cpp)
 
-add_executable(transpose ${SOURCE_FILES})
+add_executable(pi_calc ${SOURCE_FILES})
 
-target_link_libraries(transpose PUBLIC MPI::MPI_CXX)
+target_link_libraries(pi_calc PUBLIC MPI::MPI_CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-    target_compile_options(transpose PRIVATE -Wall -Wextra -pedantic -O3)
+    target_compile_options(pi_calc PRIVATE -Wall -Wextra -pedantic -O3)
 endif()
